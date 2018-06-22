@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="~/css/style2.css">
+<h2>Dojo Activity Center</h2>
+<a href="/Home" class="toplink">Home</a> <a href="/logout" class="toplink">Logout</a>
+<hr>
+<h3>Create an Activity!</h3>
+<form action="subact" method="post">
+    <table>
+        <tr>
+            <td>Title: </td>
+            <td><input type="text" name="actname" class="txtinput"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Date: </td>
+            <td><input type="datetime-local" name="date" min="@ViewBag.Time"></td>
+        </tr>
+        <tr>
+            <td>Duration: </td>
+            <td><input type="number" name="durationint" class="txtinput"></td>
+            <td><select name="durationtype">
+                <option value="minutes">Minutes</option>
+                <option value="hours">Hours</option>
+                <option value="days">Days</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Description: </td>
+        </tr>
+    </table>
+    <textarea rows="4" cols="20" name="description" id="desc"></textarea><br>
+    <input type="submit" value="Create Activity" id="button">
+</form>

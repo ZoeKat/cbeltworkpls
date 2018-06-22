@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="~/css/style.css">
+<h2>Dojo Activity Center</h2>
+<h3>Welcome, @ViewBag.Name!</h1>
+<a href="/logout" id="logout">Logout</a>
+<hr>
+<table>
+    <tr>
+        <th>Activity</th>
+        <th>Date and Time</th>
+        <th>Duration</th>
+        <th>Event Coordinator</th>
+        <th>Number of Participants</th>
+        <th>Actions</th>
+    </tr>
+@{
+    foreach(var activ in ViewBag.Allact)
+    {
+        <tr>
+            <td><a href="/activity/@activ.idactivities">@activ.actname</a></td>
+            <td>@activ.date.Date.ToString("MM/dd") at @activ.date.ToString("hh:mm tt")</td>
+            <td>@activ.durationint @activ.durationtype</td>
+            <td>@activ.coordname</td>
+            <td>@activ.participants.Count</td>
+            <td>@if(@activ.coordid == @ViewBag.Userid)
+            {
+                <a href="/delete/@activ.idactivities">Delete</a>
+            }
+            else
+            {
+                bool liked = false;
+                @foreach(var user in ViewBag.Allparts)
+                {
+                    @if(ViewBag.Userid == user.idusers && user.idactivities == activ.idactivities)
+                    {
+                        liked = true;
+                    }
+                }
+                @if(liked != true)
+                {
+                    <a href="/join/@activ.idactivities">Join</a>
+                }
+                else
+                {
+                    <a href="/leave/@activ.idactivities">Leave</a>
+                }
+            }</td>
+        </tr>
+    }
+}
+</table>
+
+<a href="/New"><button>Add new activity!</button></a>

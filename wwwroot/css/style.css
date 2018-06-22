@@ -1,0 +1,21 @@
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 15px;
+}
+h2, h3 {
+    display: inline-block;
+}
+h3 {
+    margin-left: 70px;
+}
+#logout {
+    margin-left: 40px;
+}
+button {
+    margin-top: 20px;
+}

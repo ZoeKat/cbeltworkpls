@@ -1,0 +1,48 @@
+﻿<h2>Login</h2>
+<form action="login" method="post">
+    <table>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" name="email"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="text" name="password"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Login" class="subbuttons"></td>
+        </tr>
+    </table>
+</form>
+
+<h2>Register</h2>
+@model users
+<form asp-action="Register" asp-controller="Home" method="post">
+    <table>
+        <tr>
+            <td>First Name:</td>
+            <td><input type="text" asp-for="first_name"></td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td><input type="text" asp-for="last_name"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" asp-for="email"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="text" asp-for="password"></td>
+        </tr>
+        <tr>
+            <td>Confirm Password:</td>
+            <td><input type="text" name="confpassword"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Register" class="subbuttons"></td>
+        </tr>
+    </table>
+</form>

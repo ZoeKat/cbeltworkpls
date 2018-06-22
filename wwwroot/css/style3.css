@@ -1,0 +1,17 @@
+h2{
+    display: inline-block;
+}
+.toplink {
+    margin-left: 70px;
+}
+#otherinfo {
+    margin-left: 25px;
+}
+#desc {
+    margin-left: 25px;
+}
+button {
+    position: relative;
+    left: 300px;
+    top: -230px;
+}

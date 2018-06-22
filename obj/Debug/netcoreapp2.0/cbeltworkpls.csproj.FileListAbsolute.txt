@@ -1,0 +1,11 @@
+C:\Users\techi\Documents\coding dojo\csharp\mvc stuff\cbeltworkpls\bin\Debug\netcoreapp2.0\cbeltworkpls.deps.json
+C:\Users\techi\Documents\coding dojo\csharp\mvc stuff\cbeltworkpls\bin\Debug\netcoreapp2.0\cbeltworkpls.runtimeconfig.json
+C:\Users\techi\Documents\coding dojo\csharp\mvc stuff\cbeltworkpls\bin\Debug\netcoreapp2.0\cbeltworkpls.runtimeconfig.dev.json
+C:\Users\techi\Documents\coding dojo\csharp\mvc stuff\cbeltworkpls\bin\Debug\netcoreapp2.0\cbeltworkpls.dll
+C:\Users\techi\Documents\coding dojo\csharp\mvc stuff\cbeltworkpls\bin\Debug\netcoreapp2.0\cbeltworkpls.pdb
+C:\Users\techi\Documents\coding dojo\csharp\mvc stuff\cbeltworkpls\obj\Debug\netcoreapp2.0\cbeltworkpls.csprojResolveAssemblyReference.cache
+C:\Users\techi\Documents\coding dojo\csharp\mvc stuff\cbeltworkpls\obj\Debug\netcoreapp2.0\cbeltworkpls.csproj.CoreCompileInputs.cache
+C:\Users\techi\Documents\coding dojo\csharp\mvc stuff\cbeltworkpls\obj\Debug\netcoreapp2.0\cbeltworkpls.AssemblyInfoInputs.cache
+C:\Users\techi\Documents\coding dojo\csharp\mvc stuff\cbeltworkpls\obj\Debug\netcoreapp2.0\cbeltworkpls.AssemblyInfo.cs
+C:\Users\techi\Documents\coding dojo\csharp\mvc stuff\cbeltworkpls\obj\Debug\netcoreapp2.0\cbeltworkpls.dll
+C:\Users\techi\Documents\coding dojo\csharp\mvc stuff\cbeltworkpls\obj\Debug\netcoreapp2.0\cbeltworkpls.pdb

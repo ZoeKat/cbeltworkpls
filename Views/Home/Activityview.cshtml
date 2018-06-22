@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="~/css/style3.css">
+<h2>Dojo Activity Center</h2>
+<a href="/Home" class="toplink">Home</a> <a href="/logout" class="toplink">Logout</a>
+<hr>
+<h3>@ViewBag.Activity.actname</h3>
+<div id="otherinfo">
+    <h4>Event Coordinator: @ViewBag.Activity.coordname</h4>
+    <h4>Description:</h4>
+    <p id="desc">@ViewBag.Desc</p>
+    <h4>Participants:</h4>
+    <ul>
+        @{
+            foreach(var peep in ViewBag.Guests)
+            {
+                <li>@peep.user.first_name</li>
+            }
+        }
+    </ul>
+    @{
+        if(@ViewBag.Activity.coordid == @ViewBag.Userid)
+        {
+            <a href="/delete/@ViewBag.Activity.idactivities"><button>Delete</button></a>
+        }
+        else
+        {
+            bool liked = false;
+            @foreach(var user in ViewBag.Guests)
+            {
+                @if(ViewBag.Userid == user.idusers && user.idactivities == ViewBag.Activity.idactivities)
+                {
+                    liked = true;
+                }
+            }
+            @if(liked != true)
+            {
+                <a href="/join/@ViewBag.Activity.idactivities"><button>Join</button></a>
+            }
+            else
+            {
+                <a href="/leave/@ViewBag.Activity.idactivities"><button>Leave</button></a>
+            }
+        }
+    }
+</div>

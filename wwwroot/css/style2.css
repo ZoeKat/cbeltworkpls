@@ -1,0 +1,17 @@
+h2{
+    display: inline-block;
+}
+.toplink {
+    margin-left: 70px;
+}
+.txtinput {
+    width: 213px;
+}
+#desc {
+    margin-left: 88px;
+    margin-top: -21px;
+    width: 210px;
+}
+#button {
+    margin-left: 202px;
+}
